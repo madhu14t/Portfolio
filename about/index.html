@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4178165e5b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image\code-logo.png">
+
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../image/Madhu-pic2.jpg" alt="PIC" draggable="false">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">LET ME <span>INTRODUCE</span> MYSELF</h1><br>
+                    <p class="text">Hi, I'm Madhu Tallapalli, a passionate computer science undergraduate at Vellore Institute of Technology, Chennai. As a committed and goal-driven individual, I am eager to build a rewarding career in software engineering. I bring to the table a strong foundation in Python, C++ (OOP), and web development technologies like HTML, CSS, and JavaScript. My technical expertise extends to Spring Boot, Angular, and MongoDB, along with experience in machine learning algorithms, REST API development, and real-time data synchronization. Known for my quick learning ability and adaptability, I excel in dynamic, fast-paced, and collaborative environments.
+
+When I'm not immersed in coding, I enjoy traveling, which helps me gain new perspectives and discover unique cultures and experiences. This curiosity fuels my creativity and enhances my problem-solving skills.
+
+</p>
+                        
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Designing</span><br>Experienced in UI/UX design, creating engaging digital experiences.</li>
+                            <li><span>Machine Learning Expertise</span><br>Skilled in diverse machine learning algorithms: regression, clustering, classification.</li>
+                            <li><span>Web Applications</span><br>Skilled in crafting functional and user-friendly web applications.</li>
+                            <li><span>Cloud Applications</span><br>Basic Understanding in Google Cloud Platforms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br>Under Graduate at Vellore Institute of Technology,Chennai</li>
+                            <li><span>2019-2021</span><br>Secondary Education at Sai Vikram Junior College,Giddalur</li>
+                            <li><span>2018-2019</span><br>Schooling at Bhashyam High School,Guntur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
